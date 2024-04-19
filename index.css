@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: outfit;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(122, 120, 120);
+}
+.container-principal {
+    display: flex;
+    height: 80%;
+    width: 40%;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+
+    .container-pantalla {
+        width: 100%;
+        height: 25%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .pantalla {
+            width: 95%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+
+            div {
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.137);
+                height: 50%;
+                display: flex;
+                justify-content: end;
+                padding: 0 10px 0 0;
+                color: white;
+            }
+            .pantalla-contenido-1{
+                padding: 10px 10px;
+            }
+            .pantalla-contenido-2 {
+                color: rgb(158, 158, 158);
+            }
+        }
+    }
+    .container-contenido {
+        display: flex;
+        height: 75%;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .container-contenido-btn {
+            height: 100%;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(212, 212, 212);
+
+            button:hover {
+                background-color: rgba(255, 9, 9, 0.89);
+            }
+
+            .container-btn {
+                height: 20%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 80%;
+                    height: 80%;
+                    border: none;
+                    border-radius: 20px;
+                    background-color: rgb(51, 51, 51);
+                    color: #fff;
+                }
+                button:hover {
+                    background-color: rgba(255, 9, 9, 0.89);
+                }
+                .btn-inter {
+                    background-color: rgba(255, 9, 9, 0.89);
+                }
+                .btn-inter:hover {
+                    color: white;
+                    background-color: rgba(255, 9, 9, 0.205);
+                }
+            }
+            .container-btn-igual {
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 80%;
+                    height: 80%;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 50px;
+                    color: #fff;
+                    background-color: rgba(255, 9, 9, 0.733);
+                }
+                button:hover {
+                    background-color: rgba(255, 9, 9, 0.87);
+                }
+            }
+        }
+    }
+}
